@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin:           0;
+    padding:          0;
+    border:           0;
+    box-sizing:       border-box;
+    font-family:      'Roboto', sans-serif;
+    
+    outline:          none; /* * */
+    list-style:       none; /* * */
+    text-decoration:  none; /* * */
+}
+
+:root {
+    --defaultBlue:    rgb(12, 6, 48);
+    --defaultWhite:   rgb(255, 255, 255);
+    --defaultBlack:   rgb(0, 0, 0);
+    --defaultRed:     rgb(255, 0, 0);
+}
+
+html, body {
+    width:            100%;
+    height:           100%;
+}
+
+body {
+    display:          flex;
+    flex-direction:   column;
+}
+
+main { flex: 1; }
+
+header,
+main,
+footer,
+section {
+    width:            100%;
+    max-width:        100%;
+    height:           auto;
+
+    display:          flex;
+}
+
+header { padding: 22px 33px; }
+
+header a { color: var(--defaultWhite); }
+
+header, footer
+{ background-color: var(--defaultBlue); }
+
+header {
+    justify-content:  center;
+    text-align:       center;
+    color:            var(--defaultWhite);
+    font-size:        24pt;
+}
+
+main {
+    padding:          8px 0;
+    flex-direction:   column;
+    align-items:      center;
+    gap:              16px;
+}
+
+main section {
+    padding:          8px;
+    width:            100%;
+    max-width:        90%;
+    height:           auto;
+    border:           4px solid var(--defaultBlue);
+    border-radius:    8px;
+    display:          flex;
+    flex-direction:   column;
+}
+
+main section > h2 {
+    text-align:       center;
+    border-bottom:    2px solid var(--defaultBlue);
+}
+
+main section > p
+{ padding: 8px 16px; }
+
+main section h2 {
+    padding:          0 0 4px 0;
+    margin:           0 0 4px 0;
+}
+
+main section p {
+    font-size: 17pt;
+}
+
+
+
+footer {
+    padding:          8px;
+    justify-content:  center;
+    text-align:       center;
+    color:            var(--defaultWhite);
+    font-size:        11pt;
+}
